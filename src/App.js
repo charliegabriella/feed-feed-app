@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
-import RecipeCard from "./components/Card";
 import MyFeed from "./components/myfeed";
 
 function App() {
   return (
-    <div className="whole">
+    <div className="wholepage">
       <header className="Header">
         <p>Our first header</p>
       </header>

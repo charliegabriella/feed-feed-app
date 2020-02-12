@@ -49,16 +49,19 @@ export default class MyFeed extends React.Component {
 
   render() {
     //console.log(this.state.data.meals);
-    const mealNames = this.state.data.map(meal => meal.strMeal);
-    console.log(mealNames);
-    console.log(this.statedata);
+    //const mealNames = this.state.data.map(meal => meal.strMeal);
+    //console.log(mealNames);
+    //console.log(this.statedata);
     return this.state.data.map(meal => {
       return (
-        <RecipeCard
-          imageUrl={meal.strMealThumb}
-          title={meal.strMeal}
-          desciption={meal.strArea}
-        />
+        console.log(meal.strArea),
+        (
+          <RecipeCard
+            imageUrl={meal.strMealThumb}
+            title={meal.strMeal}
+            description={meal.strArea}
+          />
+        )
       );
     });
   }
