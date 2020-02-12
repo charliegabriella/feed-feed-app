@@ -1,22 +1,4 @@
-.recipecard {
-  display: flex;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-}
-
-.recipecard > .colleft {
+.colleft {
+  background-color: steelblue;
   width: 50%;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.recipecard > .colright {
-  width: 50%;
-  padding: 10px;
-}
-
-img {
-  width: 10px;
-  height: 10px;
 }
