@@ -7,16 +7,13 @@ import MyFeed from "./myfeed";
 function App() {
   return (
     <div className="whole">
-      <LikeCounter />
-      <MyFeed />
       <header className="Header">
         <p>Our first header</p>
       </header>
-      <body>
-        <div>
-          Recept/Post:
-          <div>Social Buttons</div>
-          <div>Comments</div>
+      <main>
+        <div className="mainLeft">vertical navbar</div>
+        <div className="mainRight">
+          Recept/Post: Social Buttons Comments
           <RecipeCard
             imageUrl={
               "https://indebuurt.nl/denbosch/wp-content/uploads/2017/08/dsc_0031-e1502361590539.jpg" //Image: always put the tiitle + description under it
@@ -25,8 +22,9 @@ function App() {
             description={"ja ja"}
           />
           <MyFeed />
+          <LikeCounter />
         </div>
-      </body>
+      </main>
       <footer>
         <p>Footer!</p>
       </footer>
