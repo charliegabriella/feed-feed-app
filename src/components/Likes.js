@@ -1,4 +1,6 @@
 import React from "react";
+import "./Likes.css";
+
 export default class LikeCounter extends React.Component {
   state = {
     numLikes: 0
@@ -8,13 +10,20 @@ export default class LikeCounter extends React.Component {
       numLikes: this.state.numLikes + 1
     });
   };
+
+  decrement = () => {
+    this.setState({
+      numLikes: this.state.numLikes - 1
+    });
+  };
   render() {
     return (
-      <div>
-        <p>
+      <div className="likeElement">
+        <div className="Display">
           <b>{this.state.numLikes}</b> likes!
-        </p>
-        <button onClick={this.increment}>Like</button>
+        </div>
+        <div class="arrow-up" onClick={this.increment}></div>
+        <div class="arrow-down" onClick={this.decrement}></div>
       </div>
     );
   }
