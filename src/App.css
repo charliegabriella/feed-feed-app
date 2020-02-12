@@ -51,3 +51,8 @@ footer {
   border-color: purple;
   border-width: 2px;
 }
+
+.colleft {
+  background-color: steelblue;
+  width: 50%;
+}
