@@ -10,7 +10,6 @@ export default class RecipeCard extends React.Component {
           {/* <img src={this.props.imageUrl} alt="" /> */}
         </div>
         <div className="colright">
-          <MyFeed />
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
         </div>

@@ -5,7 +5,6 @@
   justify-content: center;
   flex-direction: row;
   margin: 10px;
-  box-sizing: border-box;
 }
 
 header {
@@ -14,7 +13,7 @@ header {
   justify-content: center;
   width: 100%;
   border-style: solid;
-  border-color: red;
+  border-color: yellow;
   border-width: 2px;
   height: 10vh;
 }
@@ -24,7 +23,7 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   width: 90%;
-  height: 80vh;
+  height: auto;
   border: solid black 2px;
   margin: 10px 0px;
 }
@@ -36,10 +35,13 @@ main {
 }
 
 .mainRight {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   width: 90%;
+  height: auto;
   border: springgreen solid 2px;
   margin: 5px;
-  overflow: hidden;
 }
 
 footer {

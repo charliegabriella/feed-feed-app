@@ -1,5 +1,5 @@
 import React from "react";
-
+import RecipeCard from "./Card";
 export default class MyFeed extends React.Component {
   // the initial state
   state = {
@@ -51,10 +51,15 @@ export default class MyFeed extends React.Component {
     //console.log(this.state.data.meals);
     const mealNames = this.state.data.map(meal => meal.strMeal);
     console.log(mealNames);
-    return (
-      <div>
-        <ul>{mealNames.join(" - ")}</ul>
-      </div>
-    );
+    console.log(this.statedata);
+    return this.state.data.map(meal => {
+      return (
+        <RecipeCard
+          imageUrl={meal.strMealThumb}
+          title={meal.strMeal}
+          desciption={meal.strArea}
+        />
+      );
+    });
   }
 }
