@@ -1,5 +1,6 @@
 import React from "react";
 import RecipeCard from "./Card";
+import LikeCounter from "./Likes";
 export default class MyFeed extends React.Component {
   // the initial state
   state = {
@@ -42,9 +43,6 @@ export default class MyFeed extends React.Component {
     ];
 
     this.setState({ loading: false, data: randomMeals });
-    // (1) fetch some data (hopefully, something resembling a list of articles)
-    // (2) put it in component local state (as per the shape discussed above)
-    // (3) ...and if the loading fails, set an error state like discussed above
   };
 
   render() {
@@ -61,6 +59,7 @@ export default class MyFeed extends React.Component {
             title={meal.strMeal}
             description={meal.strArea}
             instructions={meal.strInstructions}
+            likes={<LikeCounter />}
           />
         )
       );
