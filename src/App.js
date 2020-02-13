@@ -3,12 +3,14 @@ import "./App.css";
 import LikeCounter from "./components/Likes";
 import RecipeCard from "./components/Card";
 import MyFeed from "./components/myfeed";
+import AddUser from "./components/AddUser";
 
 function App() {
   return (
     <div className="whole">
       <header className="Header">
         <p>Our first header</p>
+        <AddUser />
       </header>
       <main>
         <div className="mainLeft">vertical navbar</div>
