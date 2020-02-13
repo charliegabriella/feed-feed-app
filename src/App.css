@@ -15,7 +15,32 @@ header {
   justify-content: center;
   width: 100%;
   background-color: burlywood;
-  height: 10vh;
+  height: 20vh;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  height: 100%;
+}
+
+#logo {
+  height: 150%;
+  width: auto;
+  max-width: 150%;
+  max-height: 150%;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+  width: 70%;
 }
 
 main {
@@ -31,8 +56,10 @@ main {
   flex-direction: column;
   align-items: center;
   width: 10%;
-  background-color: rgba(61, 55, 43, 0.219);
+  background-color: rgba(223, 108, 127, 0.199);
   border-radius: 12px;
+  border-style: solid;
+  border-color: black;
   margin: 10px;
 }
 

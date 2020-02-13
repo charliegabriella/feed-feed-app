@@ -22,8 +22,8 @@ export default class LikeCounter extends React.Component {
         <div className="Display">
           <b>{this.state.numLikes}</b> likes!
         </div>
-        <div class="arrow-up" onClick={this.increment}></div>
-        <div class="arrow-down" onClick={this.decrement}></div>
+        <div className="arrow-up" onClick={this.increment}></div>
+        <div className="arrow-down" onClick={this.decrement}></div>
       </div>
     );
   }
