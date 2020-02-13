@@ -60,6 +60,7 @@ export default class MyFeed extends React.Component {
             imageUrl={meal.strMealThumb}
             title={meal.strMeal}
             description={meal.strArea}
+            instructions={meal.strInstructions}
           />
         )
       );

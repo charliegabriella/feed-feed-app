@@ -15,7 +15,30 @@ header {
   justify-content: center;
   width: 100%;
   background-color: burlywood;
-  height: 10vh;
+  height: 20vh;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  height: 100%;
+}
+
+#logo {
+  height: 150%;
+  width: auto;
+  max-width: 150%;
+  max-height: 150%;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
 }
 
 main {
