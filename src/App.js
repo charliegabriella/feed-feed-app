@@ -11,7 +11,7 @@ function App() {
           <img src={Logo} alt="website logo" id="logo" />
         </div>
         <div className="headerRight">
-          <p>Our first header</p>
+          <p>Random Recipe Repository</p>
         </div>
       </header>
       <main>
@@ -21,7 +21,7 @@ function App() {
         </div>
       </main>
       <footer>
-        <p>Footer!</p>
+        <p>Trademarked.</p>
       </footer>
     </div>
   );
