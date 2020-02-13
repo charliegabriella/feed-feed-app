@@ -16,6 +16,7 @@ header {
   width: 100%;
   background-color: burlywood;
   height: 20vh;
+  border-bottom: double black 3px;
 }
 
 .headerLeft {
@@ -56,9 +57,9 @@ main {
   flex-direction: column;
   align-items: center;
   width: 10%;
-  background-color: rgba(223, 108, 127, 0.199);
+  background-color: rgba(129, 108, 76, 0.199);
   border-radius: 12px;
-  border-style: solid;
+  border-style: double;
   border-color: black;
   margin: 10px;
 }
@@ -76,4 +77,5 @@ footer {
   width: 100%;
   height: 10%;
   background-color: burlywood;
+  border-top: double black 3px;
 }

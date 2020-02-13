@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card.css";
-import LikeCounter from "./Likes";
 export default class RecipeCard extends React.Component {
   render() {
     return (
@@ -22,9 +21,7 @@ export default class RecipeCard extends React.Component {
             <div className="bottomLeft">
               <p>{this.props.description} cuisine</p>
             </div>
-            <div className="bottomRight">
-              <LikeCounter />
-            </div>
+            <div className="bottomRight">{this.props.likes}</div>
           </div>
         </div>
       </div>
