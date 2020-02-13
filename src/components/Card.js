@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card.css";
-import LikeCounter from "./Likes";
 export default class RecipeCard extends React.Component {
   render() {
     return (
