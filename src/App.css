@@ -1,11 +1,12 @@
-.whole {
+.wholepage {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 10px;
-  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(216, 206, 187);
 }
 
 header {
@@ -13,41 +14,68 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  border-style: solid;
-  border-color: red;
-  border-width: 2px;
-  height: 10vh;
+  background-color: burlywood;
+  height: 20vh;
+  border-bottom: double black 3px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  height: 100%;
+}
+
+#logo {
+  height: 150%;
+  width: auto;
+  max-width: 150%;
+  max-height: 150%;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+  width: 70%;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 90%;
-  height: 80vh;
-  border: solid black 2px;
-  margin: 10px 0px;
+  height: 90%;
 }
 
 .mainLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 10%;
-  border: black solid 2px;
-  margin: 5px;
+  background-color: rgba(129, 108, 76, 0.199);
+  border-radius: 12px;
+  border-style: double;
+  border-color: black;
+  margin: 10px;
 }
 
 .mainRight {
+  display: flex;
+  flex-direction: column;
   width: 90%;
-  border: springgreen solid 2px;
-  margin: 5px;
-  overflow: hidden;
+  height: auto;
 }
 
 footer {
   display: flex;
-  align-content: center;
+  justify-content: center;
   width: 100%;
-  height: 10vh;
-  border-style: solid;
-  border-color: purple;
-  border-width: 2px;
+  height: 10%;
+  background-color: burlywood;
+  border-top: double black 3px;
 }

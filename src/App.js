@@ -1,34 +1,30 @@
 import React from "react";
 import "./App.css";
-import LikeCounter from "./components/Likes";
-import RecipeCard from "./components/Card";
 import MyFeed from "./components/myfeed";
 import AddUser from "./components/AddUser";
+import Logo from "./images/logo_transparent.png";
 
 function App() {
   return (
-    <div className="whole">
+    <div className="wholepage">
       <header className="Header">
         <p>Our first header</p>
         <AddUser />
+        <div className="headerLeft">
+          <img src={Logo} alt="website logo" id="logo" />
+        </div>
+        <div className="headerRight">
+          <p>Random Recipe Repository</p>
+        </div>
       </header>
       <main>
-        <div className="mainLeft">vertical navbar</div>
+        <div className="mainLeft"></div>
         <div className="mainRight">
-          Recept/Post: Social Buttons Comments
-          <RecipeCard
-            imageUrl={
-              "https://indebuurt.nl/denbosch/wp-content/uploads/2017/08/dsc_0031-e1502361590539.jpg" //Image: always put the tiitle + description under it
-            }
-            title={"titel gerecht"}
-            description={"omschrijving gerecht"}
-          />
           <MyFeed />
-          <LikeCounter />
         </div>
       </main>
       <footer>
-        <p>Footer!</p>
+        <p>Trademarked.</p>
       </footer>
     </div>
   );
