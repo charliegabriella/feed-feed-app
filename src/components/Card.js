@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 export default class RecipeCard extends React.Component {
   render() {
     return (
@@ -7,7 +8,9 @@ export default class RecipeCard extends React.Component {
       <div className="recipecard">
         {/* left side of box with image */}
         <div className="colleft">
-          <img src={this.props.imageUrl} alt="" />
+          <Link to="/recipepage/test">
+            <img src={this.props.imageUrl} alt="" />
+          </Link>
         </div>
         {/* right side of box with information and links*/}
         <div className="colright">
