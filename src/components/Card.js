@@ -1,6 +1,17 @@
 import React from "react";
 import "./Card.css";
 export default class RecipeCard extends React.Component {
+  addUser = name => {
+    const user = {
+      id: Math.round(Math.random() * 100000),
+      name,
+      score: 0
+    };
+    this.setState({
+      players: this.state.players.concat(user)
+    });
+  };
+
   render() {
     return (
       // displays box that is divided n two sizes with image and recipe information

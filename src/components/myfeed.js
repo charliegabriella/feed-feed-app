@@ -9,6 +9,7 @@ export default class MyFeed extends React.Component {
   };
   // ...
   componentDidMount = async () => {
+    //Fetches the data from the API
     const response = await fetch(
       "https://www.themealdb.com/api/json/v1/1/random.php"
     );
@@ -35,6 +36,7 @@ export default class MyFeed extends React.Component {
     const parsedResponse5 = await response5.json();
 
     const randomMeals = [
+      //puts fetched data into an array of 5 different objects
       parsedResponse.meals[0],
       parsedResponse2.meals[0],
       parsedResponse3.meals[0],
