@@ -18,6 +18,12 @@
   height: 100%;
 }
 
+link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   height: 50%;
   width: 50%;

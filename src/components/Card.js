@@ -19,7 +19,11 @@ export default class RecipeCard extends React.Component {
       <div className="recipecard">
         {/* left side of box with image */}
         <div className="colleft">
-          <Link to="/recipepage/test">
+          {/* {console.log(this.props.mealid)} */}
+          <Link to={`/recipepage/${this.props.mealid}`}>
+            {" "}
+            {/*Step 2 (of passing ID through routing/making a personal link). 
+          Because every recipe has its own personal ID, you can use pass that ID to the URL. Now go to recipe page.  */}
             <img src={this.props.imageUrl} alt="" />
           </Link>
         </div>
@@ -42,3 +46,6 @@ export default class RecipeCard extends React.Component {
     );
   }
 }
+
+//when you set the path you set the placeholder (mealID), :mealID
+//this.props.match.params.mealID
