@@ -11,19 +11,16 @@ function App() {
   return (
     <div className="wholepage">
       <header className="Header">
-        <p>Our first header</p>
         <div className="headerLeft">
           <img src={Logo} alt="website logo" id="logo" />
         </div>
-        <div className="headerRight">
-          <p>Random Recipe Repository .powered by themealDB</p>
-        </div>
+        <div className="headerRight"></div>
       </header>
       <main>
-        <Route path="/LoginPage/:ietsanders" component={LoginPage} />
         <div className="mainLeft"></div>
         <div className="mainRight">
           <Route path="/ProfilePage/:iets" component={ProfilePage} />
+          <Route path="/LoginPage/:ietsanders" component={LoginPage} />
           <Route exact path="/" component={MyFeed} />
           {/* step 6 */}
           <Route path="/recipepage/:mealId" component={RecipePage} />
@@ -32,7 +29,10 @@ function App() {
         </div>
       </main>
       <footer>
-        <p>Trademarked.</p>
+        <p>
+          by Steven and Charlie, COPYRIGHT for us too! dont steal our shit,
+          we'll find u, wooooord!{" "}
+        </p>
       </footer>
     </div>
   );

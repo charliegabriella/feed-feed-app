@@ -2,17 +2,6 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 export default class RecipeCard extends React.Component {
-  addUser = name => {
-    const user = {
-      id: Math.round(Math.random() * 100000),
-      name,
-      score: 0
-    };
-    this.setState({
-      players: this.state.players.concat(user)
-    });
-  };
-
   render() {
     return (
       // displays box that is divided n two sizes with image and recipe information
@@ -35,6 +24,7 @@ export default class RecipeCard extends React.Component {
           </div>
           <div className="middle">
             <Link to={`/ProfilePage/test`}>hallosteven</Link>
+            <Link to={`/LoginPage/test`}>thisistheloginnnnn</Link>
             <p>{this.props.instructions}</p>
           </div>
           <div className="bottom">
