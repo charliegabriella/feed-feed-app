@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+body,
+input {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .wholepage {
   display: flex;
   flex-wrap: wrap;

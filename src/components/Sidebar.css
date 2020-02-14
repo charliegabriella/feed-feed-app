@@ -1,0 +1,19 @@
+#firstbutton {
+  background-color: transparent;
+  border: solid transparent 3px;
+  border-radius: 8px;
+}
+
+#firstbutton:hover {
+  background-color: white;
+  border: solid white 3px;
+  border-radius: 8px;
+}
+
+#linktofirstbutton {
+  color: black;
+}
+
+#linktofirstbutton:hover {
+  color: black;
+}

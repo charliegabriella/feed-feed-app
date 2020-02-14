@@ -21,11 +21,11 @@ export default class RecipeCard extends React.Component {
         {/* right side of box with information and links*/}
         <div className="colright">
           <div className="top">
-            <h3>{this.props.title}</h3>
+            <h2>{this.props.title}</h2>
           </div>
           <div className="middle">
-            <Link to={`/ProfilePage/test`}>hallosteven</Link>
-            <Link to={`/LoginPage/test`}>thisistheloginnnnn</Link>
+            <Link to={`/ProfilePage/test`}></Link>
+            <Link to={`/LoginPage/test`}></Link>
             <Comments />
           </div>
           <div className="bottom">

@@ -6,6 +6,7 @@ import RecipePage from "./components/recipepage";
 import { Route } from "react-router-dom"; //step 5
 import ProfilePage from "./components/ProfilePage";
 import LoginPage from "./components/LoginPage";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
         <div className="headerRight"></div>
       </header>
       <main>
-        <div className="mainLeft"></div>
+        <div className="mainLeft">
+          <Route exact path="/" component={Sidebar} />
+        </div>
+
         <div className="mainRight">
           <Route path="/ProfilePage/:iets" component={ProfilePage} />
           <Route path="/LoginPage/:ietsanders" component={LoginPage} />
