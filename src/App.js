@@ -4,7 +4,12 @@ import "./App.css";
 import MyFeed from "./components/myfeed";
 import AddUser from "./components/AddUser";
 import Logo from "./images/logo_transparent.png";
+<<<<<<< HEAD
 import { Route } from "react-router-dom";
+=======
+import RecipePage from "./components/recipepage";
+import { Route } from "react-router-dom"; //step 5
+>>>>>>> 1af0be46ae8cb0b0e56b97f16be9a0bb316672d5
 
 function App() {
   return (
@@ -16,7 +21,7 @@ function App() {
           <img src={Logo} alt="website logo" id="logo" />
         </div>
         <div className="headerRight">
-          <p>Random Recipe Repository</p>
+          <p>Random Recipe Repository .powered by themealDB</p>
         </div>
       </header>
       <main>
@@ -24,7 +29,10 @@ function App() {
           <AddUser />
         </div>
         <div className="mainRight">
-          <MyFeed />
+          <Route exact path="/" component={MyFeed} />
+          {/* step 6 */}
+          <Route path="/recipepage/:mealId" component={RecipePage} />
+          {/* step 7 --> now go to recipe page */}
         </div>
       </main>
       <footer>
