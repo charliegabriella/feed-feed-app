@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import Comments from "./Comments";
 import { Link } from "react-router-dom";
 export default class RecipeCard extends React.Component {
   render() {
@@ -25,7 +26,7 @@ export default class RecipeCard extends React.Component {
           <div className="middle">
             <Link to={`/ProfilePage/test`}>hallosteven</Link>
             <Link to={`/LoginPage/test`}>thisistheloginnnnn</Link>
-            <p>{this.props.instructions}</p>
+            <Comments />
           </div>
           <div className="bottom">
             <div className="bottomLeft">
