@@ -18,7 +18,7 @@ export default class AddPlayer extends Component {
         <form>
           <label>
             Name:
-            <input type="text" name="name" value />
+            <input type="text" name="name" />
           </label>
           <input type="submit" value="Add" />
         </form>
