@@ -22,8 +22,9 @@ export default class RecipeCard extends React.Component {
           {/* {console.log(this.props.mealid)} */}
           <Link to={`/recipepage/${this.props.mealid}`}>
             {" "}
-            {/*Step 2 (of passing ID through routing/making a personal link). 
-          Because every recipe has its own personal ID, you can use pass that ID to the URL. Now go to recipe page.  */}
+            {/*Passing ID through/Making a matching Link, Step 2: 
+          Because every recipe has its own personal ID, you can use pass that ID to the URL. 
+        The propID is now in an url. Now go to recipe page for Step 3! */}
             <img src={this.props.imageUrl} alt="" />
           </Link>
         </div>
@@ -33,6 +34,7 @@ export default class RecipeCard extends React.Component {
             <h3>{this.props.title}</h3>
           </div>
           <div className="middle">
+            <Link to={`/ProfilePage/test`}>hallosteven</Link>
             <p>{this.props.instructions}</p>
           </div>
           <div className="bottom">

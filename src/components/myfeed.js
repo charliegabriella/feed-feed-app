@@ -9,7 +9,7 @@ export default class MyFeed extends React.Component {
   };
   // ...
   componentDidMount = async () => {
-    //Fetches the data from the API
+    //This fetches the data from the API!!
     const response = await fetch(
       "https://www.themealdb.com/api/json/v1/1/random.php"
     );
@@ -56,8 +56,10 @@ export default class MyFeed extends React.Component {
       return (
         console.log(meal.idMeal),
         (
-          <RecipeCard //these are all the props passed to the component RecipeCard in the Card.js file
-            mealid={meal.idMeal} //step 1: give the ID of the meal to the meal ID (connect them). Now go to card.js
+          <RecipeCard //All the undermentioned props are passed to the component called 'RecipeCard' in the file Card.js
+            mealid={meal.idMeal} //This prop is passed to
+            //Passing ID through/Making a matching Link, step 1:
+            //You give the ID of the prop to the propID. This way you connect them. Once you've done this, go to file card.js
             imageUrl={meal.strMealThumb}
             title={meal.strMeal}
             description={meal.strArea}

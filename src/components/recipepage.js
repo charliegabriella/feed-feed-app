@@ -10,16 +10,24 @@ export default class RecipePage extends React.Component {
   // ...
 
   componentDidMount = async () => {
-    const mealid = this.props.match.params.mealId; //
+    const mealid = this.props.match.params.mealId;
+    //Passing ID through/Making a matching Link, step 3. Made a variable so we can oproepen
     console.log("this is", mealid);
     const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}` //Step 3 (of passing ID through routing): Create these whole
+      //Passing ID through/Making a matching Link step 4: fetch the variable en sla deze op in deze link
+      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}`
+      //
     );
     const parsedResponse = await response.json();
     console.log("is the parsed respone", parsedResponse);
-    const specificMeal = [parsedResponse.meals[0]];
+    const specificMeal = [parsedResponse.meals[0]]; //Step 5. Put the fetched data in an array in an variable.
+    //Dit doen we omdat we dit in een array willen zetten. In specific meal zit nu een object.
+    //het heet meals omdat het de eerste property is van de parsedResponse (dus dat zit in de API).We willen dus alleen
+    //meals van de parsedResponse.
 
-    this.setState({ loading: false, data: specificMeal });
+    this.setState({ loading: false, data: specificMeal }); //nu wordt specific meal in 'Data' gezet. En  met
+    //data kunnen we alles veranderen op de pagina. We put the data in the state, because when the render starts
+    //it checks what's new about the state. The data changes, because every time there is a new recipe passed into it.
   };
 
   render() {

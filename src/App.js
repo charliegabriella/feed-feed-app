@@ -4,12 +4,8 @@ import "./App.css";
 import MyFeed from "./components/myfeed";
 import AddUser from "./components/AddUser";
 import Logo from "./images/logo_transparent.png";
-<<<<<<< HEAD
-import { Route } from "react-router-dom";
-=======
 import RecipePage from "./components/recipepage";
 import { Route } from "react-router-dom"; //step 5
->>>>>>> 1af0be46ae8cb0b0e56b97f16be9a0bb316672d5
 
 function App() {
   return (
@@ -25,14 +21,17 @@ function App() {
         </div>
       </header>
       <main>
+        <Route path="/LoginPage/:ietsanders" component={LoginPage} />
         <div className="mainLeft">
           <AddUser />
         </div>
         <div className="mainRight">
+          <Route path="/ProfilePage/:iets" component={ProfilePage} />
           <Route exact path="/" component={MyFeed} />
           {/* step 6 */}
           <Route path="/recipepage/:mealId" component={RecipePage} />
           {/* step 7 --> now go to recipe page */}
+          {/* Routing URL Step 1: Every card that we made, has now link to its image. The image is the link.  The mealid wordt het url. The mealID vragen we op in component RecipePage in that file." */}
         </div>
       </main>
       <footer>
