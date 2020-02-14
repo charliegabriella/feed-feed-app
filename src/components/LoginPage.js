@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Login extends React.Component {
+export default class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,5 +11,3 @@ class Login extends React.Component {
     return <div></div>;
   }
 }
-
-ReactDOM.render(<Login />, document.getElementById(""));

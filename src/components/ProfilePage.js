@@ -1,26 +1,16 @@
 import React, { Component } from "react";
-export default class ProfilePage extends Component {
-  state = {
-    user: ""
-  }
+import { Route } from "react-router-dom";
 
-const ProfileArea = (props) => {
+export default class ProfilePage extends Component {
+  render() {
     return (
       <div>
-        <h1>Profile for {props.username}</h1>
-  
+        <h1>Profile for: </h1>
+
         <ul>
-          <li>Email address: {props.emailAddress}</li>
+          <li>Email address:</li>
         </ul>
       </div>
-    )
-  };
-  
-  ProfileArea.propTypes = {
-    username: PropTypes.string.isRequired,
-    emailAddress: PropTypes.string.isRequired
-  };
-  
-  export default ProfileArea;
-
+    );
+  }
 }
