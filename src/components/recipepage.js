@@ -32,6 +32,7 @@ export default class RecipePage extends React.Component {
             <h1>Hi there one</h1>
             {console.log(this.state.data)}
             <p>{this.state.data.strArea}</p>
+
             <Link to="/">go bACK to InDex</Link>
             {/* step 9. this is the last stepppp!!! */}
           </div>
