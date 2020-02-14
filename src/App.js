@@ -3,7 +3,7 @@ import "./App.css";
 import MyFeed from "./components/myfeed";
 import Logo from "./images/logo_transparent.png";
 import RecipePage from "./components/recipepage";
-import { Route } from "react-router-dom";
+import { Route } from "react-router-dom"; //step 5
 
 function App() {
   return (
@@ -20,7 +20,9 @@ function App() {
         <div className="mainLeft"></div>
         <div className="mainRight">
           <Route exact path="/" component={MyFeed} />
-          <Route path="/recipepage/:placeholder" component={RecipePage} />
+          {/* step 6 */}
+          <Route path="/recipepage/:mealId" component={RecipePage} />
+          {/* step 7 --> now go to recipe page */}
         </div>
       </main>
       <footer>

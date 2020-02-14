@@ -52,9 +52,10 @@ export default class MyFeed extends React.Component {
     //console.log(this.statedata);
     return this.state.data.map(meal => {
       return (
-        console.log(meal.strArea),
+        console.log(meal.idMeal),
         (
-          <RecipeCard
+          <RecipeCard //these are all the props passed to the component RecipeCard in the Card.js file
+            mealid={meal.idMeal} //step 1: give the ID of the meal to the meal ID (connect them). Now go to card.js
             imageUrl={meal.strMealThumb}
             title={meal.strMeal}
             description={meal.strArea}
